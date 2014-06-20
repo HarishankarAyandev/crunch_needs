@@ -107,3 +107,6 @@ sudo apt-get update
 sudo apt-get install -y postgresql-9.2 pgadmin3 libpq-dev postgresql-client
 sudo apt-get install -y nodejs
 sudo apt-get install -y p7zip-full
+
+#sqlite3
+sudo apt-get install libsqlite3-dev

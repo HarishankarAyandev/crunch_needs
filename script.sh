@@ -92,3 +92,12 @@ sudo apt-get install -y python-software-properties software-properties-common cu
 echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" > ~/pgdg.list
 sudo mv ~/pgdg.list /etc/apt/sources.list.d/pgdg.list
 sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+
+#node
+wget http://nodejs.org/dist/v0.10.12/node-v0.10.12.tar.gz
+tar xzf node-v0.10.12.tar.gz
+cd node-v0.10.12/
+./configure
+make
+make test
+sudo make install

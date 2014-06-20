@@ -101,3 +101,9 @@ cd node-v0.10.12/
 make
 make test
 sudo make install
+
+#postgresql
+sudo apt-get update
+sudo apt-get install -y postgresql-9.2 pgadmin3 libpq-dev postgresql-client
+sudo apt-get install -y nodejs
+sudo apt-get install -y p7zip-full

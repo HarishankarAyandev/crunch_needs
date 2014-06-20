@@ -110,3 +110,31 @@ sudo apt-get install -y p7zip-full
 
 #sqlite3
 sudo apt-get install libsqlite3-dev
+
+#pre-requisities for redis server
+#reference : https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
+sudo apt-get update
+sudo apt-get install build-essential
+sudo apt-get install tcl8.5
+
+#installing redis
+wget http://download.redis.io/releases/redis-2.8.9.tar.gz
+tar xzf redis-2.8.9.tar.gz
+cd redis-2.8.9
+make
+make test
+sudo make install
+cd utils
+sudo ./install_server.sh
+
+sudo service redis_6379 start
+sudo service redis_6379 stop
+
+#for accessing redis database
+redis-cli
+
+#to start at boot 
+sudo update-rc.d redis_6379 defaults
+
+#for ember
+sudo npm install -g ember-cli@0.0.22

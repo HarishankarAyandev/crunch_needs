@@ -143,3 +143,53 @@ sudo npm install
 #bower
 sudo apt-get install git-core
 sudo npm install -g bower
+
+#mysql
+#source: https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-debian-7
+sudo apt-get install mysql-server
+
+#nginx
+sudo apt-get install nginx
+sudo service nginx start
+
+Now if you point your browser to your IP address, it should confirm that nginx was successfully installed on your cloud server.
+
+*Run the following command to reveal your VPS's IP address.
+
+ifconfig eth0 | grep inet | awk '{ print $2 }'
+
+#open
+sudo nano /etc/nginx/sites-available/default
+ [...]
+server {
+        listen   80;
+     
+
+        root /usr/share/nginx/www;
+        index index.php index.html index.htm;
+
+        server_name example.com;
+
+        location / {
+                try_files $uri $uri/ /index.html;
+        }
+
+        error_page 404 /404.html;
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+              root /usr/share/nginx/www;
+        }
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        location ~ \.php$ {
+                try_files $uri =404;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+                
+        }
+
+}
+[...]

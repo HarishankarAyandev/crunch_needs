@@ -83,3 +83,7 @@ sudo apt-get install darktable
 #for audacity
 
 sudo apt-get install audacity lame libmp3lame0
+
+
+#to get python properties
+sudo apt-get install -y python-software-properties software-properties-common curl

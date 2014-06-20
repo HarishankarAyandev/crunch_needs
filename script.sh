@@ -138,3 +138,8 @@ sudo update-rc.d redis_6379 defaults
 
 #for ember
 sudo npm install -g ember-cli@0.0.22
+sudo npm install
+
+#bower
+sudo apt-get install git-core
+sudo npm install -g bower

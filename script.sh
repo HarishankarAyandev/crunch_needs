@@ -87,3 +87,8 @@ sudo apt-get install audacity lame libmp3lame0
 
 #to get python properties
 sudo apt-get install -y python-software-properties software-properties-common curl
+
+#db
+echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" > ~/pgdg.list
+sudo mv ~/pgdg.list /etc/apt/sources.list.d/pgdg.list
+sudo wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -

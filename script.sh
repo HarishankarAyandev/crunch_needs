@@ -210,7 +210,6 @@ sudo fakeroot checkinstall -y --install=no --pkgversion $(echo $(pwd) | sed -n -
 	
 #for npm
 #The module n makes version-management easy:
-
 sudo npm install n -g
 sudo n 0.4.12
 

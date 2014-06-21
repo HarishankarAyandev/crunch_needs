@@ -192,4 +192,31 @@ server {
         }
 
 }
-[...]
+[...] '
+
+#node latest version
+sudo apt-get install python g++ make checkinstall fakeroot
+src=$(mktemp -d) && cd $src
+wget -N http://nodejs.org/dist/node-latest.tar.gz
+tar xzvf node-latest.tar.gz && cd node-v*
+./configure
+sudo fakeroot checkinstall -y --install=no --pkgversion $(echo $(pwd) | sed -n -re's/.+node-v(.+)$/\1/p') make -j$(($(nproc)+1)) install
+ sudo dpkg -i node_*
+
+ #for uninstall
+ sudo dpkg -r node
+
+  123 down vote accepted
+	
+#for npm
+#The module n makes version-management easy:
+
+sudo npm install n -g
+sudo n 0.4.12
+
+#For the latest version:
+
+sudo n stable
+
+#bower installing
+sudo npm install -g bower

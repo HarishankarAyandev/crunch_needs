@@ -219,3 +219,6 @@ sudo n stable
 
 #bower installing
 sudo npm install -g bower
+
+#setting nginx permission e.g : if guindy_times is the folder name that you need permission to !
+chmod +rx -R guindy_times

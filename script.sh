@@ -222,3 +222,38 @@ sudo npm install -g bower
 
 #setting nginx permission e.g : if guindy_times is the folder name that you need permission to !
 chmod +rx -R guindy_times
+
+#for installing hipchat(ubuntu, Kubuntu, Mint, Debian)
+
+sudo su
+echo "deb http://downloads.hipchat.com/linux/apt stable main" > \
+  /etc/apt/sources.list.d/atlassian-hipchat.list
+wget -O - https://www.hipchat.com/keys/hipchat-linux.key | apt-key add -
+apt-get update
+apt-get install hipchat
+
+#for installing hipchat(Fedora, Red hat enterprise Linux,Centos, Oracle linux)
+
+sudo su
+echo "[atlassian-hipchat]
+name=Atlassian Hipchat
+baseurl=http://downloads.hipchat.com/linux/yum
+enabled=1
+gpgcheck=1
+gpgkey=https://www.hipchat.com/keys/hipchat-linux.key
+" > /etc/yum.repos.d/atlassian-hipchat.repo
+yum install hipchat
+
+#hipchat(for archlinux)
+
+su
+curl https://www.hipchat.com/keys/hipchat-linux.key | \
+  GNUPGHOME=/etc/pacman.d/gnupg gpg --import 
+echo '[atlassian]
+SigLevel = PackageOptional DatabaseRequired TrustAll
+Server = http://downloads.hipchat.com/linux/arch/$arch
+' >> /etc/pacman.conf
+pacman -Syy
+pacman -S hipchat
+
+

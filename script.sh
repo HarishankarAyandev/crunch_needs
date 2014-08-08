@@ -256,4 +256,8 @@ Server = http://downloads.hipchat.com/linux/arch/$arch
 pacman -Syy
 pacman -S hipchat
 
+#Installing youtube-dl on debian
+$ sudo apt-get install python-dev python-pip gcc
+$ sudo pip install --upgrade youtube_dl
 
+Source: http://xmodulo.com/2013/03/how-to-save-youtube-videos-on-linux.html

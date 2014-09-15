@@ -261,3 +261,5 @@ $ sudo apt-get install python-dev python-pip gcc
 $ sudo pip install --upgrade youtube_dl
 
 Source: http://xmodulo.com/2013/03/how-to-save-youtube-videos-on-linux.html
+
+#FOr connecting android with waldorf

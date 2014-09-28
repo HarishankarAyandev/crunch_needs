@@ -262,4 +262,11 @@ $ sudo pip install --upgrade youtube_dl
 
 Source: http://xmodulo.com/2013/03/how-to-save-youtube-videos-on-linux.html
 
-#FOr connecting android with waldorf
+#For http and https proxy
+git config --global http.proxy socks5://localhost:7575
+git config --global https.proxy socks5://localhost:7575
+
+
+#For using git proxy
+git config --global url."https://".insteadOf git://
+

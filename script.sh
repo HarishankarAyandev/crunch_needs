@@ -275,3 +275,5 @@ git config --global https.proxy socks5://localhost:7575
 #For using git proxy
 git config --global url."https://".insteadOf git://
 
+#For flash properties
+sudo apt-get install flashplugin-installer

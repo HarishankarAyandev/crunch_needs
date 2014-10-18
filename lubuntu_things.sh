@@ -18,3 +18,11 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install sublime-text-installer
 
+#bash to zshell rbenv issue
+
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
+$ echo 'eval "$(rbenv init -)"' >> ~/.zshenv
+$ echo 'source $HOME/.zshenv' >> ~/.zshrc
+$ exec $SHELL
+
+

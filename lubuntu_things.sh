@@ -13,4 +13,8 @@ which firefox
 
 This command shows location of the executable of firefox(which is an application). Similary you could use this which command to see the location of any utility. And $() or the backticks get the value from the which command.
 
+#installing sublime 3
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
 

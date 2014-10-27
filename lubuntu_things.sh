@@ -25,4 +25,8 @@ $ echo 'eval "$(rbenv init -)"' >> ~/.zshenv
 $ echo 'source $HOME/.zshenv' >> ~/.zshrc
 $ exec $SHELL
 
-
+#installing libre office
+sudo add-apt-repository ppa:libreoffice/libreoffice-4-2
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install libreoffice

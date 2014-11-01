@@ -30,3 +30,10 @@ sudo add-apt-repository ppa:libreoffice/libreoffice-4-2
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get install libreoffice
+
+#installing grunt
+npm install grunt --save-dev
+
+#installing yeoman
+npm install -g yo
+npm install -g generator-angular

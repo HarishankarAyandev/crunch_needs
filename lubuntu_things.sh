@@ -37,3 +37,7 @@ npm install grunt --save-dev
 #installing yeoman
 npm install -g yo
 npm install -g generator-angular
+
+#installing chromium
+sudo apt-get install chromium-browser
+

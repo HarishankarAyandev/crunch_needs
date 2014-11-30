@@ -41,3 +41,5 @@ npm install -g generator-angular
 #installing chromium
 sudo apt-get install chromium-browser
 
+#installing mysql
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev

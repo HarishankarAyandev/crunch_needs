@@ -14,3 +14,8 @@ make
 sudo make install
 
 ./python
+
+#installing exfat
+sudo apt-get install exfat-fuse exfat-utils
+
+

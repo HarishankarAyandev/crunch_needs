@@ -18,4 +18,8 @@ sudo make install
 #installing exfat
 sudo apt-get install exfat-fuse exfat-utils
 
-
+#installing nodejs
+sudo apt-get install python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs

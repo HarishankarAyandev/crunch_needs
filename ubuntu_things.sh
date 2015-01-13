@@ -30,3 +30,6 @@ sudo npm install -g npm
 #installing bower
 sudo npm install bower -g
 
+#installing yo and grunt-cli
+sudo npm install -g yo
+sudo npm install -g grunt-cli

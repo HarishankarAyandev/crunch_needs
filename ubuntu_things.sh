@@ -33,3 +33,10 @@ sudo npm install bower -g
 #installing yo and grunt-cli
 sudo npm install -g yo
 sudo npm install -g grunt-cli
+
+#installing telegram
+
+cd ~/Downloads
+tar -xJvf tsetup.0.7.2.tar
+sudo mv Telegram /opt/telegram
+sudo ln -sf /opt/telegram/Telegram /usr/bin/telegram
